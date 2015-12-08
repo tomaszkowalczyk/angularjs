@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body ng-app="tomApp" ng-controller="MainCtrl">
+	<div ng-include='"templates/header.html"'></div>
+	<div ng-view></div>
+	<!-- <div ng-include='"templates/footer.html"'></div> -->
+
+	<button class="btn btn-{{cfg.theme.btnClass}}">Foo</button>	
+</body>
+</html>
+
