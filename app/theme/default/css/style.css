@@ -1,0 +1,17 @@
+nav.navbar {
+	margin: 0;
+	background-color: #2B3C4F;
+	/*height: 60px;*/
+}
+nav.navbar .navbar-nav>li>a {
+	color: #fff;
+}
+nav.navbar .navbar-brand {
+    color: #fff;
+}
+
+.jumbotron {
+	background-color: #1AB5B3;
+	color: #fff;
+	margin: 0;
+}

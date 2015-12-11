@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('tom-app')
+angular.module('tomApp')
 	.controller('MainCtrl', ['', function($scope){
 		$log('foo');
 	}]);

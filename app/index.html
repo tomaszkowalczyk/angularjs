@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="tomApp" ng-controller="MainCtrl">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
+	
+	<script src="../bower_components/angularjs/angular.min.js"></script>
+	<script src="../bower_components/angular-route/angular-route.min.js"></script>
+	<script src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" ng-href="theme/{{ cfg.theme_name }}/css/style.css">
 </head>
-<body ng-app="tomApp" ng-controller="MainCtrl">
+<body>
+	<div ng-include='"templates/navbar.html"'></div>
 	<div ng-include='"templates/header.html"'></div>
 	<div ng-view></div>
 	<!-- <div ng-include='"templates/footer.html"'></div> -->
-
-	<button class="btn btn-{{cfg.theme.btnClass}}">Foo</button>	
+	
 </body>
 </html>
 
